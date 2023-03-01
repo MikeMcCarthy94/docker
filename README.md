@@ -14,8 +14,8 @@ Download Docker desktop.
 Run it
 
 Create a Dockerfile in your Python app project
-<sub>
-FROM python:3
+
+<sub> FROM python:3
 
 WORKDIR /usr/src/app USE THE DIRECTORY OF YOUR APP
 
@@ -24,8 +24,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "./your-daemon-or-script.py" ]
-</sub>
+CMD [ "python", "./your-daemon-or-script.py" ]</sub>
+
 
 Then run: docker build -t my-python-app .
 
